@@ -20,7 +20,7 @@ jobs:
 
     - name: Deploy to EC2
       run: |
-        ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} ubuntu@<YOUR_EC2_PUBLIC_IP> << 'EOF'
+        ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} ubuntu@16.171.148.99 << 'EOF'
           cd /hello_it
           git pull origin main
           source /hello_it/venv/bin/activate
