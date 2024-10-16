@@ -2,3 +2,88 @@
 
 
 {% block site_title %}Home | Hello IT Academy - Practical Learning Center{% endblock site_title %}
+
+
+<!-- main-area -->
+{% block main_content %}
+<main class="main-area fix">
+
+    <!-- banner-area -->
+    {% block banner_area %}
+            {% include "component/slider.html" %}
+    {% endblock banner_area %}
+    <!-- banner-area-end -->
+
+    <!-- categories-area -->
+    {% block category %}
+            {% include "component/category.html" %}
+    {% endblock category %}
+    <!-- categories-area-end -->
+
+    <!-- brand-area -->
+    {% block brand_area %}
+        {% comment %} {% include "component/brand_line.html" %} {% endcomment %}
+    {% endblock brand_area %}
+    <!-- brand-area-end -->
+
+    <!-- about-area -->
+    {% block about_area %}
+            {% include "component/home_about_area.html" %}
+    {% endblock about_area %}
+    
+    <!-- about-area-end -->
+
+    <!-- course-area -->
+    {% block course_area %}
+        {% include "component/course_area.html" %}
+    {% endblock course_area %}
+
+    <!-- course-area-end -->
+
+    <!-- newsletter-area -->
+    {% block newsletter %}
+        {% include "component/newslatter.html" %}
+    {% endblock newsletter %}
+    <!-- newsletter-area-end -->
+
+    <!-- instructor-area -->
+    {% block instructor_area %}
+        {% comment %} {% include "component/instructors.html" %} {% endcomment %}
+    {% endblock instructor_area %}
+    <!-- instructor-area-end -->
+
+    <!-- counter -->
+    {% block counter %}
+        {% include "component/counter.html" %}
+    {% endblock counter %}
+    <!-- counter-end -->
+
+    <!-- faq-area -->
+    {% block faq %} 
+        {% include "component/faq.html" %}
+    {% endblock faq %}
+    <!-- faq-area-end -->
+
+    <!-- features-area -->
+    {% block feature_area %}
+        {% include "component/home_feature.html" %}
+    {% endblock feature_area %}
+    <!-- features-area-end -->
+
+    <!-- registration-->
+
+    {% block registration %}
+        {% include "component/registration.html" %}
+    {% endblock registration %}
+    
+    <!-- registration-end -->
+
+    <!-- blog-area -->
+    {% block blog_area %}
+        {% include "component/blog_area.html" %}
+    {% endblock blog_area %}
+    <!-- blog-area-end -->
+
+</main>
+{% endblock main_content %}
+<!-- main-area-end -->

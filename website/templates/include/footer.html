@@ -4,104 +4,71 @@
     <div class="footer__top">
         <div class="container">
             <div class="row">
+                <!-- Company Info Section -->
                 <div class="col-xl-6 col-lg-4 col-md-6">
                     <div class="footer__widget">
                         <div class="logo mb-35">
-                            <a href="index.html"><img src="{% static "assets/img/logo/Hello IT Academy white.svg" %}" alt="img"></a>
+                            <a href="{% url 'homepage' %}">
+                                <img src="{% static 'assets/img/logo/Hello IT Academy white.svg' %}" alt="Hello IT Academy logo">
+                            </a>
                         </div>
                         <div class="footer__content">
-                            <p>when an unknown printer took galley of type and scrambled it to make pspecimen bookt has.</p>
+                            <p>Welcome to Hello IT Academy, where we empower students through hands-on, project-based learning. Our courses in IT, programming, and software development are designed to help you succeed in the fast-growing technology field.</p>
                             <ul class="list-wrap">
-                                <li>1029, The Spire 2, Nr. Shital Park Circle, Rajkot</li>
+                                <li>RK Iconics, 150 ft Ring Road, Nr. Ayodhya Circle, Rajkot, Gujarat</li>
                                 <li>+91-8511583131</li>
+                                <li><a href="mailto:info@helloitacademy.com">info@helloitacademy.com</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                {% comment %} <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="footer__widget-title">Useful Links</h4>
-                        <div class="footer__link">
-                            <ul class="list-wrap">
-                                <li><a href="events-details.html">Our values</a></li>
-                                <li><a href="events-details.html">Our advisory board</a></li>
-                                <li><a href="events-details.html">Our partners</a></li>
-                                <li><a href="events-details.html">Become a partner</a></li>
-                                <li><a href="events-details.html">Work at Future Learn</a></li>
-                                <li><a href="events-details.html">Quizlet Plus</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> {% endcomment %}
+
+                <!-- Our Company Links Section -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <div class="footer__widget">
                         <h4 class="footer__widget-title">Our Company</h4>
                         <div class="footer__link">
                             <ul class="list-wrap">
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="instructor-details.html">Become Teacher</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="instructor-details.html">Instructor</a></li>
-                                {% comment %} <li><a href="events-details.html">Events</a></li> {% endcomment %}
+                                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                                <li><a href="{% url 'projects' %}">Our Projects</a></li>
+                                <li><a href="{% url 'courses' %}">Our Courses</a></li>
+                                <li><a href="{% url 'blog' %}">Blog</a></li>
+                                <li><a href="{% url 'registration' %}">Enroll Now</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- Get In Touch Section -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="footer__widget">
                         <h4 class="footer__widget-title">Get In Touch</h4>
                         <div class="footer__contact-content">
-                            <p>when an unknown printer took <br> galley type and scrambled</p>
-                            <ul class="list-wrap footer__social">
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="{% static "assets/img/icons/facebook.svg" %}" alt="img" class="injectable">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="{% static "assets/img/icons/twitter.svg" %}" alt="img" class="injectable">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="{% static "assets/img/icons/whatsapp.svg" %}" alt="img" class="injectable">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="{% static "assets/img/icons/instagram.svg" %}" alt="img" class="injectable">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <img src="{% static "assets/img/icons/youtube.svg" %}" alt="img" class="injectable">
-                                    </a>
-                                </li>
-                            </ul>
+                            <p>Have questions? Get in touch with us to learn more about our project-based learning approach and IT training programs.</p>
+                            <a class="btn" href="{% url 'contactus' %}">Contact US</a>
+                        
                         </div>
-                        {% comment %} <div class="app-download">
-                            <a href="#"><img src="{% static "assets/img/others/google-play" %}.svg" alt="img"></a>
-                            <a href="#"><img src="{% static "assets/img/others/apple-store" %}.svg" alt="img"></a>
-                        </div> {% endcomment %}
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Footer Bottom Section -->
     <div class="footer__bottom">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <div class="copy-right-text">
-                        <p>© 2010-2024 skillgro.com. All rights reserved.</p>
+                        <p>© 2010-2024 Hello IT Academy. All rights reserved. We offer high-quality IT training courses for students worldwide. Learn coding, programming, software development, and more with project-based learning.</p>
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="footer__bottom-menu">
                         <ul class="list-wrap">
-                            <li><a href="contact.html">Term of Use</a></li>
-                            <li><a href="contact.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>

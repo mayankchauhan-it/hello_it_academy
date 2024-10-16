@@ -10,46 +10,24 @@
                 <div class="tgmenu__wrap">
                     <nav class="tgmenu__nav">
                         <div class="logo">
-                            <a href="index.html"><img src="{% static "assets/img/logo/Hello IT Academy.svg" %}" alt="Logo"></a>
+                            <a href="/"><img src="{% static "assets/img/logo/Hello IT Academy.svg" %}" alt="Logo"></a>
                         </div>
                         <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                             <ul class="navigation">
-                                <li class="active"><a href="#">Home</a>
-                                    {% comment %} <ul class="sub-menu">
-                                        <li class="active"><a href="index.html">Home One</a></li>
-                                        <li><a href="index-2.html">Home Two</a></li>
-                                    </ul> {% endcomment %}
+                                <li class="active"><a href="/">Home</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Courses</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="courses.html">All Courses</a></li>
-                                        <li><a href="course-details.html">Course Details</a></li>
-                                    </ul>
+
+                                <li class=""><a href="{% url 'aboutus' %}">About Us</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="instructors.html">Our Instructors</a></li>
-                                        <li><a href="instructor-details.html">Instructor Details</a></li>
-                                        <li><a href="events.html">Our Events</a></li>
-                                        <li><a href="events-details.html">Event Details</a></li>
-                                        <li><a href="login.html">Student Login</a></li>
-                                        <li><a href="registration.html">Student Registration</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="contact.html">contact</a></li>
-                                    </ul>
+
+                                <li class=""><a href="{% url 'projects' %}">Project Learning</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Shop</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="shop.html">Shop Page</a></li>
-                                        <li><a href="shop-details.html">Shop Details</a></li>
-                                    </ul>
+
+                                <li class=""><a href="{% url 'courses' %}">Technology Courses</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog Grid</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
+                                <li class=""><a href="{% url 'blog' %}">Blog</a>
+                                </li>
+                                <li class=""><a href="{% url 'contactus' %}">Contact US</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,11 +39,9 @@
                                     </svg>
                                     <select class="form-select" id="course-cat" aria-label="Default select example" style="width: 150px">
                                         <option selected disabled>Categories</option>
-                                        <option value="1">Business</option>
-                                        <option value="2">Data Science</option>
-                                        <option value="3">Art & Design</option>
-                                        <option value="4">Marketing</option>
-                                        <option value="5">Finance</option>
+                                        <option value="1">Project Based Learning</option>
+                                        <option value="2">Technology Courses</option>
+                                        <option value="3">Web Designing</option>
                                     </select>
                                 </div>
                                 <div class="input-grp">
@@ -76,20 +52,8 @@
                         </div>
                         <div class="tgmenu__action">
                             <ul class="list-wrap">
-                                <li class="wishlist-icon">
-                                    <a href="shop.html" class="cart-count">
-                                        <img src="{% static "assets/img/icons/heart.svg" %}" class="injectable" alt="img">
-                                        <span class="wishlist-count">0</span>
-                                    </a>
-                                </li>
-                                <li class="mini-cart-icon">
-                                    <a href="shop.html" class="cart-count">
-                                        <img src="{% static "assets/img/icons/cart.svg" %}" class="injectable" alt="img">
-                                        <span class="mini-cart-count">0</span>
-                                    </a>
-                                </li>
                                 <li class="header-btn login-btn">
-                                    <a href="login.html">Log in</a>
+                                    <a href="{% url 'login' %}">Log in/Register</a>
                                 </li>
                             </ul>
                         </div>
