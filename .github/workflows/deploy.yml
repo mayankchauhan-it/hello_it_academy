@@ -23,7 +23,7 @@ jobs:
         ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} ubuntu@16.171.148.99 << 'EOF'
           cd /hello_it
           git pull origin main
-          source /hello_it/venv/bin/activate
+          source /hello_it/env/bin/activate
           pip install -r requirements.txt
           python3 manage.py migrate
           python3 manage.py collectstatic --noinput
