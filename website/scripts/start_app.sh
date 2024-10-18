@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-PROJECT_MAIN_DIR_NAME="django-aws-ec2-nginx-gunicorn"
+PROJECT_MAIN_DIR_NAME="hello_it_academy"
 
 # Validate variables
 if [ -z "$PROJECT_MAIN_DIR_NAME" ]; then
@@ -17,7 +17,9 @@ cd "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
 
 # Activate virtual environment
 echo "Activating virtual environment..."
-source "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/venv/bin/activate"
+source "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/env/bin/activate"
+
+cd "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/website"
 
 # Run collectstatic command
 echo "Running collectstatic command..."
